@@ -1,3 +1,5 @@
+'''a class for normal user'''
+
 class User():
     def __init__(self, f_name, l_name, l_attempts=0):
         self.first_name = f_name

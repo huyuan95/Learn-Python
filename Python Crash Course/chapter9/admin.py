@@ -1,3 +1,5 @@
+'''a class for administrator'''
+
 import user
 
 class Privileges():

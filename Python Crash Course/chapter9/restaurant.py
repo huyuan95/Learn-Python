@@ -1,3 +1,5 @@
+''' a class for restaurant'''
+
 class Restaurant():
     def __init__(self, r_name, r_type, r_number=0):
         self.restaurant_name=r_name

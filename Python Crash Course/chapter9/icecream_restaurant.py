@@ -1,3 +1,5 @@
+''' a class for incecream stand'''
+
 import restaurant
 
 class IceCreamStand(restaurant.Restaurant):
