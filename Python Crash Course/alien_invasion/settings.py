@@ -28,7 +28,6 @@ class Settings:
 
         self.initialize_dynamic_settings()
 
-
     def initialize_dynamic_settings(self):
         """ initiate dynamic game settings"""
         self.ship_speed_factor = 1.5
@@ -40,7 +39,6 @@ class Settings:
 
         # score
         self.alien_points = 50
-
 
     def increase_speed(self):
         self.ship_speed_factor *= self.speedup_scale
