@@ -6,7 +6,7 @@ def printTable(table):
         for i in range(len(table)):
             print(table[i][j].rjust(colWidth[i])+' ', end = '')
         
-        print('\n')
+        print('')
     return
 
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
