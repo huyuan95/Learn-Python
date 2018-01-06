@@ -1,17 +1,16 @@
 #! /Users/dreamyang/anaconda3/bin/python
-import requests, sys, webbrowser, bs4, logging, urllib
+import requests, sys, webbrowser, bs4, logging
+logging.disable(logging.DEBUG)
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s\
                               - %(message)s')
 logging.debug("Program start")
 print('Googling...')
-# res = urllib.request.urlopen(r'https://google.com/search?q=fly').read()
-res = requests.get('http://bing.com/search?q=' + ' '.join(sys.argv[1:]))
-# res = requests.get('http://python.org')
+res = requests.get('http://baidu.com/s?wd=' + ' '.join(sys.argv[1:]))
 res.raise_for_status()
-soup = bs4.BeautifulSoup(res)
+soup = bs4.BeautifulSoup(res.text)
 
-linkElems = soup.find_all('.r a')
+linkElems = soup.select('.t a')
 logging.debug(linkElems)
 numOpen = min(5, len(linkElems))
 logging.debug(str(numOpen))
