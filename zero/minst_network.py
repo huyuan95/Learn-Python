@@ -1,5 +1,5 @@
 import struct
-from neutralnetwork import *
+from bp import *
 from datetime import datetime
 
 
